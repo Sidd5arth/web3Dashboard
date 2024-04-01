@@ -9,7 +9,6 @@ import Button from "../Components/Button/Button";
 const Dashboard: React.FC = () => {
   const [cryptoData, setCryptoData] = useState<Currency[]>();
   const { data } = useCryptoData();
-  console.log(data);
   useEffect(() => {
     if (data) {
       const cryptoArray = [];
@@ -17,7 +16,6 @@ const Dashboard: React.FC = () => {
       cryptoArray.push(data.GBP);
       cryptoArray.push(data.EUR);
       setCryptoData(cryptoArray);
-      console.log(cryptoArray);
     }
   }, [data]);
 

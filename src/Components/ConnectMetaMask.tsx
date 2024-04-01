@@ -2,6 +2,7 @@ import React from "react";
 import Button from "./Button/Button";
 import { Velustro } from "uvcanvas";
 import useMetamask from "../Hooks/useMetaMask";
+import { toast } from "react-hot-toast";
 
 const ConnectMetaMask: React.FC = () => {
   const { connectMetamask } = useMetamask();
@@ -10,7 +11,7 @@ const ConnectMetaMask: React.FC = () => {
     try {
       await connectMetamask();
     } catch (error) {
-      console.error("Failed to connect to MetaMask:", error);
+      toast.error("Failed to connect to MetaMask:");
     }
   };
 

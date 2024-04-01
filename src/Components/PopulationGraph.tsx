@@ -13,11 +13,9 @@ const PopulationGraph: React.FC<PopulationGraphProps> = ({
   type,
   viewportWidth,
 }) => {
-  console.log(viewportWidth);
   const { isLoading, data } = usePopulationData();
   const [chartInstance, setChartInstance] = useState<Chart | null>(null);
   const chartRef = useRef<HTMLCanvasElement | null>(null);
-  console.log(data);
   useEffect(() => {
     if (!isLoading && data) {
       const ctx = chartRef.current;
