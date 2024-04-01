@@ -37,17 +37,18 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
             style={{
               transform: hamOpen ? "translateX(0%)" : "translateX(-100%)",
               transition: "transform 0.5s ease",
+              zIndex: "200",
             }}
-            className="position-absolute z-3 "
+            className="position-absolute "
           >
             <Navigation />
           </div>
           <div
             onClick={() => setHamOpen((prev) => !prev)}
-            className="position-absolute z-3"
-            style={{ right: "15px", cursor: "pointer" }}
+            className="position-absolute"
+            style={{ right: "15px", cursor: "pointer", zIndex: "300" }}
           >
-            {hamOpen ? <Close width={40} /> : <Ham width={40} />}
+            {hamOpen ? <Close /> : <Ham />}
           </div>
           <div style={{ height: "100vh", overflowY: "scroll" }}>{children}</div>
         </>

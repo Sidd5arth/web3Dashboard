@@ -19,10 +19,7 @@ const CryptoCard: React.FC<CryptoCardProps> = ({
   return (
     <div className="card-dimension">
       <div className="card-dimension-button d-flex align-items-center justify-content-center ">
-        <ArrowDark
-          width={20}
-          style={{ transform: "rotate(135deg)", color: "red" }}
-        />
+        <ArrowDark />
       </div>
       <div className="card-content d-flex flex-column  justify-content-between ps-3 pe-3 pt-3 pb-2">
         <div
@@ -30,7 +27,7 @@ const CryptoCard: React.FC<CryptoCardProps> = ({
           style={{ color: "#888" }}
         >
           <p>BTC</p>
-          <Arrow width={20} style={{ transform: "rotate(180deg)" }} />
+          <Arrow />
           <p>{code}</p>
         </div>
         <div>

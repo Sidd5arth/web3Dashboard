@@ -20,6 +20,7 @@ export interface AppContextProviderProps {
   children: React.ReactNode;
 }
 export interface Currency {
+  symbol: string;
   code: string;
   description: string;
   rate: string;

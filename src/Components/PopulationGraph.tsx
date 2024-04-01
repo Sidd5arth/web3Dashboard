@@ -5,7 +5,7 @@ import Button from "./Button/Button";
 import "./population.css";
 
 interface PopulationGraphProps {
-  type: string;
+  type: any;
   viewportWidth: number;
 }
 
@@ -24,7 +24,7 @@ const PopulationGraph: React.FC<PopulationGraphProps> = ({
       if (ctx && chartInstance) {
         chartInstance.destroy();
       }
-      const newChartInstance = new Chart(ctx, {
+      const newChartInstance = new Chart(ctx!, {
         type: type,
         data: {
           labels: data.map((item: any) => item.Year),
@@ -102,7 +102,7 @@ const PopulationGraph: React.FC<PopulationGraphProps> = ({
                 family: "regular",
               },
               callbacks: {
-                label: (context) => {
+                label: (context: any) => {
                   return `Population: ${context.parsed.y.toLocaleString()}`;
                 },
               },

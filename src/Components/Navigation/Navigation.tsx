@@ -35,7 +35,7 @@ const Navigation: React.FC = () => {
     >
       <div className="d-flex justify-content-between align-content-center align-items-center  ">
         <div>
-          <Logo height={70} width={110} />
+          <Logo />
         </div>
         <p style={{ margin: "0", color: "white" }} className="gradient-text">
           2.0
