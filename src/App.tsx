@@ -9,7 +9,7 @@ const App: React.FC = () => {
   useEffect(() => {
     setTimeout(() => {
       setReveal(true);
-    }, 300);
+    }, 210);
   }, []);
   return (
     <>
