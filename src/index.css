@@ -1,0 +1,66 @@
+@font-face {
+  font-family: "light";
+  src: url("./assets/Fonts/Kanit-Light.woff") format("woff");
+}
+@font-face {
+  font-family: "regular";
+  src: url("./assets/Fonts/Kanit-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "medium";
+  src: url("./assets/Fonts/Kanit-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: "thin";
+  src: url("./assets/Fonts/Kanit-Thin.woff") format("woff");
+}
+
+:root {
+  font-family: regular;
+  line-height: 1.5;
+  font-weight: 400;
+  background-color: black;
+  color: rgba(255, 255, 255, 0.87);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --p-sm: 13px;
+  --r-sm: 6px;
+  --p-md: 20px;
+  --r-md: 8px;
+  --text-sm: 14px;
+  --text-md: 1.25em;
+  --green: #07d017;
+  --bg: rgb(41, 45, 41);
+  --bg-light: rgb(49, 55, 49);
+  --shade-black: #b7b7b7;
+  --sh-green: 0px 0px 30px 0px rgba(5, 134, 37, 1);
+  --sh: 0px 0px 30px 0px rgba(7, 35, 16, 0.2);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: regular;
+  background-color: black;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: regular;
+}
+.gradient-text {
+  background-color: yellow;
+  background-image: linear-gradient(45deg, #d3d82a, #94eb88);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}

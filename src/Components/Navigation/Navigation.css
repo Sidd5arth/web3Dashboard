@@ -1,0 +1,62 @@
+.navigation {
+  height: 100vh;
+  overflow-y: scroll;
+  background-color: rgb(41, 45, 41);
+}
+.search {
+  position: relative;
+  background-color: var(--bg-light);
+  box-shadow: var(--sh);
+  font-family: regular;
+  padding-left: 2rem;
+  padding-right: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.search-icon {
+  position: absolute;
+  top: 30%;
+  left: 3%;
+}
+.nav-li {
+  width: 100%;
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+}
+.nav-li:hover {
+  background-color: var(--bg-light);
+}
+.nav-ul {
+  list-style: none;
+  padding: 0;
+}
+.notification {
+  margin-left: 3em;
+  margin-bottom: 0em;
+  margin-top: 2px;
+  height: 20px;
+  width: 25px;
+  border-radius: 0.2em;
+  color: black;
+  background-color: var(--green);
+  font-size: 13px;
+}
+.email {
+  font-size: x-small;
+  color: var(--shade-black);
+}
+.rounded-circle {
+  position: absolute;
+  height: 8px;
+  width: 8px;
+  background-color: var(--green);
+  z-index: 12;
+  left: 45px;
+}
+.img-container {
+  width: 40px;
+  height: 40px;
+  border-radius: 100em;
+  overflow: hidden;
+  position: relative;
+}

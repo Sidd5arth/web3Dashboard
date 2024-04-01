@@ -1,0 +1,10 @@
+.button-style {
+  border: none;
+  font-family: regular;
+  background-color: var(--green);
+  transition: all 0.3s ease-out;
+}
+.button-style:hover {
+  box-shadow: var(--sh-green);
+  background-color: rgba(0, 255, 64, 1);
+}
